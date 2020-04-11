@@ -1,0 +1,70 @@
+header, footer, .btn--soon {
+  background-color: #579C87;
+}
+
+h1, h2, .btn--soon {
+  color: #FDCB46;
+}
+
+.title {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.title__h1 {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.btm {
+  height: 96px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+.btm__txt {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.btn--soon {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  margin: 3rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+.menus {
+  display: flex;
+  height: 900px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menusmenus__menu {
+  display: flex;
+  height: 100px;
+  width: 60px;
+  size: 200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.menus {
+    display: flex;
+    height: 900px;
+    align-items: center;
+    justify-content: space-evenly;
+    &menus__menu {
+        display: flex;
+        height: 100px;
+        width: 60px;
+        size: 200px;
+    }
+}

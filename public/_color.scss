@@ -1,0 +1,10 @@
+$clr-green:#579C87;
+$clr-yellow:#FDCB46;
+$clr-bg:#fff;
+
+header, footer, .btn--soon {
+    background-color: $clr-green;
+}
+h1, h2, .btn--soon {
+    color:$clr-yellow;
+}

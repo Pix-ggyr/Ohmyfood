@@ -1,0 +1,12 @@
+@import 'color.scss';
+@import 'header&footer.scss';
+@import 'button.scss';
+@import 'menus.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $clr-bg;
+}
+
+
