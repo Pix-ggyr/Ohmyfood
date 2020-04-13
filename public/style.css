@@ -15,9 +15,13 @@ h1, h2, .btn--soon {
   padding: 0;
 }
 .title__h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+.title a {
+  text-decoration: none;
+  color: #FDCB46;
 }
 
 .btm {
@@ -43,9 +47,10 @@ h1, h2, .btn--soon {
 .btn--soon {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  margin: 3rem;
-  padding: 0.8rem;
+  margin: 4rem;
+  padding: 1.3rem;
   border-radius: 0.8rem;
+  letter-spacing: 0.05rem;
 }
 
 .menus {
@@ -59,7 +64,7 @@ h1, h2, .btn--soon {
   margin: 40px;
   height: 45rem;
   width: 36%;
-  box-shadow: 0px 0px 35px -5px #579C87;
+  box-shadow: 0px 0px 35px -5px darkgrey;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +76,10 @@ h1, h2, .btn--soon {
 }
 .menus__list--1 .fas {
   font-size: 4rem;
-  color: orangered;
+  background: linear-gradient(90deg, #F05867, #F6916A);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menus__list--1 h2 {
   font-size: 2.5rem;
@@ -89,13 +97,16 @@ h1, h2, .btn--soon {
 }
 .menus__list--2 h2 {
   font-size: 1.8rem;
-  color: pink;
+  background: linear-gradient(90deg, #E08817, #9E70FD);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menus__list--2 a {
   font-size: 1.3rem;
   font-family: "sriracha", sans-serif;
   text-decoration: none;
-  color: pink;
+  color: #E08817;
 }
 .menus__list--3 {
   background-color: #F9F9F9;
@@ -103,13 +114,16 @@ h1, h2, .btn--soon {
 }
 .menus__list--3 h2 {
   font-size: 2.3rem;
-  color: blue;
+  background: linear-gradient(70deg, #4866E5, #2696FA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menus__list--3 a {
   font-size: 1.3rem;
   font-family: "sriracha", sans-serif;
   text-decoration: none;
-  color: blue;
+  color: #4866E5;
 }
 .menus__list--4 {
   background-color: #FDFFFD;
@@ -117,13 +131,65 @@ h1, h2, .btn--soon {
 }
 .menus__list--4 h2 {
   font-size: 2.3rem;
-  color: greenyellow;
+  background: linear-gradient(70deg, #4C9F42, #BEFE7F);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menus__list--4 a {
   font-size: 1.3rem;
   font-family: "sriracha", sans-serif;
   text-decoration: none;
-  color: greenyellow;
+  color: #4C9F42;
+}
+.menus__page {
+  margin: 40px;
+  height: 45rem;
+  width: 36%;
+  box-shadow: 0px 0px 35px -5px darkgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.menus__page--1 {
+  background-color: #FCDFDB;
+  font-family: "devonshire", sans-serif;
+}
+.menus__page--1 .fas {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #F05867, #F6916A);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menus__page--1 h2 {
+  font-size: 2rem;
+  color: maroon;
+}
+.menus__page--1 h3 {
+  font-size: 1.2rem;
+  font-family: "sriracha", sans-serif;
+  color: maroon;
+}
+.menus__page--1 .dishes {
+  font-size: 0.9rem;
+  font-family: "Sriracha", sans-serif;
+  text-align: left;
+  color: maroon;
+}
+.menus__page--1 .dishes ul {
+  list-style-type: none;
+}
+.menus__page--1 .dishes li span {
+  align-self: right;
+}
+.menus__page--1 .title_mini h2 {
+  font-size: 1.5rem;
+}
+.menus__page--1 .title_mini h2 .fas {
+  font-size: 1.5rem;
+  padding: 0.3rem;
 }
 
 body {

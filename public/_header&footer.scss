@@ -6,9 +6,13 @@
     margin: 0;
     padding: 0;
     &__h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
+    }
+    & a {
+        text-decoration: none;
+        color: $clr-yellow;
     }
 }
 

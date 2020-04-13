@@ -3,12 +3,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 60px, 0px;
+    padding: 60px, 0px; 
     &__list {
         margin: 40px;
         height: 45rem;
         width: 36%;
-        box-shadow: 0px 0px 35px -5px $clr-green;
+        box-shadow: 0px 0px 35px -5px darkgrey;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -18,7 +18,10 @@
             font-family: 'devonshire', sans-serif;
             .fas {
                 font-size: 4rem;
-                color: orangered;
+                background: linear-gradient(90deg, #F05867, #F6916A);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                color: transparent;
             }
             h2 {
                 font-size: 2.5rem;
@@ -36,13 +39,16 @@
             font-family: 'croissant one', serif;
             h2 {
                 font-size: 1.8rem;
-                color:pink;
+                background: linear-gradient(90deg, #E08817, #9E70FD);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                color: transparent;
             }
             a {
                 font-size: 1.3rem;
                 font-family: 'sriracha', sans-serif;
                 text-decoration: none;
-                color:pink;
+                color:#E08817;
             }
         }
         &--3 {
@@ -50,13 +56,16 @@
             font-family: 'dancing script', serif;
             h2 {
                 font-size: 2.3rem;
-                color:blue;
+                background: linear-gradient(70deg, #4866E5, #2696FA);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                color: transparent;
             }
             a {
                 font-size: 1.3rem;
                 font-family: 'sriracha', sans-serif;
                 text-decoration: none;
-                color:blue;
+                color:#4866E5;
             }
         }
         &--4 {
@@ -64,16 +73,67 @@
             font-family: 'kaushan script', sans-serif;
             h2 {
                 font-size: 2.3rem;
-                color:greenyellow;
+                background: linear-gradient(70deg, #4C9F42, #BEFE7F);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                color: transparent;
             }
             a {
                 font-size: 1.3rem;
                 font-family: 'sriracha', sans-serif;
                 text-decoration: none;
-                color:greenyellow;
+                color:#4C9F42;
             }
         }
     }
-
+    &__page {
+        margin: 40px;
+        height: 45rem;
+        width: 36%;
+        box-shadow: 0px 0px 35px -5px darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        &--1 {
+            background-color: $note-bg;
+            font-family: 'devonshire', sans-serif;
+            .fas {
+                font-size: 3rem;
+                background: linear-gradient(90deg, #F05867, #F6916A);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            h2 {
+                font-size: 2rem;
+                color: maroon;
+            }
+            h3 {
+                font-size: 1.2rem;
+                font-family: 'sriracha', sans-serif;
+                color: maroon;
+            }
+            .dishes {
+                font-size: 0.9rem;
+                font-family: 'Sriracha', sans-serif;
+                text-align: left;
+                color: maroon;
+                ul {
+                    list-style-type: none;
+                }
+                li span {
+                    align-self: right;
+                }
+            }
+            .title_mini h2 {
+                font-size: 1.5rem;
+                .fas {
+                    font-size: 1.5rem;
+                    padding: 0.3rem;
+                }
+            }
+        }
+    }
 
 }
