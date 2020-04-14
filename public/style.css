@@ -1,3 +1,4 @@
+/*--------------Imported stylesheets--------------*/
 header, footer, .btn--soon {
   background-color: #579C87;
 }
@@ -191,11 +192,40 @@ h1, h2, .btn--soon {
   font-size: 1.5rem;
   padding: 0.3rem;
 }
+.menus__page--2 {
+  background-color: #FFF5FE;
+  font-family: "croissant-one", sans-serif;
+}
+.menus__page--2 h2 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #E08817, #9E70FD);
+}
+.menus__page--2 h3 {
+  font-size: 1.2rem;
+  font-family: "sriracha", sans-serif;
+  color: maroon;
+}
+.menus__page--2 .dishes {
+  font-size: 0.9rem;
+  font-family: "Sriracha", sans-serif;
+  text-align: left;
+  color: maroon;
+}
+.menus__page--2 .dishes ul {
+  list-style-type: none;
+}
+.menus__page--2 .dishes li span {
+  align-self: right;
+}
 
+/*---------------------General--------------------*/
 body {
   margin: 0;
   padding: 0;
   background-color: #fff;
 }
+
+/*---------------------Mixins---------------------*/
+/*--------------------Functions-------------------*/
 
 /*# sourceMappingURL=style.css.map */
