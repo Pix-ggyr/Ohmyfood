@@ -1,0 +1,96 @@
+.menu {
+    margin: 40px auto ;
+    padding:20px;
+    height: 45rem;
+    width: 36%;
+    box-shadow: 0px 0px 35px -5px darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &--1 {
+        background-color: $note-bg;
+        font-family: 'devonshire', sans-serif;
+        .fas {
+            font-size: 3rem;
+            @include grad-note;
+            @include clipping-mask;
+        }
+        h2 {
+            font-size: 2rem;
+            color: maroon;
+        }
+        
+        .bar {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background-color: maroon;
+            height: 3px;
+            width: 90%;
+            border-radius: 5px;
+        }
+        h3 {
+            height: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin:30px;
+            font-size: 1.2rem;
+            font-family: 'sriracha', sans-serif;
+            color: maroon;
+            background-color: $note-bg;
+        }
+        
+        .dishes {
+            font-size: 0.9rem;
+            font-family: 'Sriracha', sans-serif;
+            text-align: left;
+            color: maroon;
+            ul {
+                list-style-type: none;
+                margin: 20px,-15px,20px,20px;
+            }
+            li {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;            
+            }
+        }
+        .title_mini h2 {
+            margin: 40px;;
+            font-size: 1.5rem;
+            .fas {
+                font-size: 1.5rem;
+                padding: 0.3rem;
+            }
+        }
+    }
+    &--2 {
+        background-color: $chic-bg;
+        font-family: 'croissant-one', sans-serif;
+        h2 {
+            font-size: 2rem;
+            @include grad-chic;
+            @include clipping-mask;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-family: 'sriracha', sans-serif;
+            color: maroon;
+        }
+        .dishes {
+            font-size: 0.9rem;
+            font-family: 'Sriracha', sans-serif;
+            text-align: left;
+            color: maroon;
+            ul {
+                list-style-type: none;
+            }
+            li span {
+                float: right;
+            }
+        } 
+    }
+}

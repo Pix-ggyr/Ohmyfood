@@ -1,10 +1,12 @@
 
-    /*--------------Imported stylesheets--------------*/
+/*--------------Imported stylesheets--------------*/
 
-@import 'colors.scss';
+@import 'utils.scss';
 @import 'header&footer.scss';
 @import 'button.scss';
-@import 'menus.scss';
+@import 'card.scss';
+@import 'menu.scss';
+
 
 
     /*---------------------General--------------------*/
@@ -16,13 +18,4 @@ body {
     background-color: $clr-bg;
 }
 
-    /*---------------------Mixins---------------------*/
-
-@mixin clipping-mask {
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    color: transparent; 
-}
-
-    /*--------------------Functions-------------------*/
 

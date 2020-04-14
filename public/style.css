@@ -1,4 +1,7 @@
 /*--------------Imported stylesheets--------------*/
+/*-------------------Variables--------------------*/
+/*---------------------Mixins---------------------*/
+/*-------------------Fonctions--------------------*/
 header, footer, .btn--soon {
   background-color: #579C87;
 }
@@ -54,14 +57,14 @@ h1, h2, .btn--soon {
   letter-spacing: 0.05rem;
 }
 
-.menus {
+.cards {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 60px, 0px;
 }
-.menus__list {
+.cards__list {
   margin: 40px;
   height: 45rem;
   width: 36%;
@@ -71,80 +74,82 @@ h1, h2, .btn--soon {
   justify-content: center;
   text-align: center;
 }
-.menus__list--1 {
+.cards__list--1 {
   background-color: #FCDFDB;
   font-family: "devonshire", sans-serif;
 }
-.menus__list--1 .fas {
+.cards__list--1 .fas {
   font-size: 4rem;
   background: linear-gradient(90deg, #F05867, #F6916A);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
-.menus__list--1 h2 {
+.cards__list--1 h2 {
   font-size: 2.5rem;
   color: maroon;
 }
-.menus__list--1 a {
+.cards__list--1 a {
   font-size: 1.3rem;
   font-family: "sriracha", sans-serif;
   text-decoration: none;
   color: maroon;
 }
-.menus__list--2 {
+.cards__list--2 {
   background-color: #FFF5FE;
   font-family: "croissant one", serif;
 }
-.menus__list--2 h2 {
+.cards__list--2 h2 {
   font-size: 1.8rem;
   background: linear-gradient(90deg, #E08817, #9E70FD);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
-.menus__list--2 a {
+.cards__list--2 a {
   font-size: 1.3rem;
   font-family: "sriracha", sans-serif;
   text-decoration: none;
   color: #E08817;
 }
-.menus__list--3 {
+.cards__list--3 {
   background-color: #F9F9F9;
   font-family: "dancing script", serif;
 }
-.menus__list--3 h2 {
+.cards__list--3 h2 {
   font-size: 2.3rem;
   background: linear-gradient(70deg, #4866E5, #2696FA);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
-.menus__list--3 a {
+.cards__list--3 a {
   font-size: 1.3rem;
   font-family: "sriracha", sans-serif;
   text-decoration: none;
   color: #4866E5;
 }
-.menus__list--4 {
+.cards__list--4 {
   background-color: #FDFFFD;
   font-family: "kaushan script", sans-serif;
 }
-.menus__list--4 h2 {
+.cards__list--4 h2 {
   font-size: 2.3rem;
   background: linear-gradient(70deg, #4C9F42, #BEFE7F);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
-.menus__list--4 a {
+.cards__list--4 a {
   font-size: 1.3rem;
   font-family: "sriracha", sans-serif;
   text-decoration: none;
   color: #4C9F42;
 }
-.menus__page {
-  margin: 40px;
+
+.menu {
+  margin: 40px auto;
+  padding: 20px;
   height: 45rem;
   width: 36%;
   box-shadow: 0px 0px 35px -5px darkgrey;
@@ -153,69 +158,92 @@ h1, h2, .btn--soon {
   justify-content: center;
   text-align: center;
 }
-.menus__page--1 {
+.menu--1 {
   background-color: #FCDFDB;
   font-family: "devonshire", sans-serif;
 }
-.menus__page--1 .fas {
+.menu--1 .fas {
   font-size: 3rem;
   background: linear-gradient(90deg, #F05867, #F6916A);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
-.menus__page--1 h2 {
+.menu--1 h2 {
   font-size: 2rem;
   color: maroon;
 }
-.menus__page--1 h3 {
+.menu--1 .bar {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: maroon;
+  height: 3px;
+  width: 90%;
+  border-radius: 5px;
+}
+.menu--1 h3 {
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 30px;
   font-size: 1.2rem;
   font-family: "sriracha", sans-serif;
   color: maroon;
+  background-color: #FCDFDB;
 }
-.menus__page--1 .dishes {
+.menu--1 .dishes {
   font-size: 0.9rem;
   font-family: "Sriracha", sans-serif;
   text-align: left;
   color: maroon;
 }
-.menus__page--1 .dishes ul {
+.menu--1 .dishes ul {
   list-style-type: none;
+  margin: 20px, -15px, 20px, 20px;
 }
-.menus__page--1 .dishes li span {
-  align-self: right;
+.menu--1 .dishes li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.menus__page--1 .title_mini h2 {
+.menu--1 .title_mini h2 {
+  margin: 40px;
   font-size: 1.5rem;
 }
-.menus__page--1 .title_mini h2 .fas {
+.menu--1 .title_mini h2 .fas {
   font-size: 1.5rem;
   padding: 0.3rem;
 }
-.menus__page--2 {
+.menu--2 {
   background-color: #FFF5FE;
   font-family: "croissant-one", sans-serif;
 }
-.menus__page--2 h2 {
+.menu--2 h2 {
   font-size: 2rem;
   background: linear-gradient(90deg, #E08817, #9E70FD);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.menus__page--2 h3 {
+.menu--2 h3 {
   font-size: 1.2rem;
   font-family: "sriracha", sans-serif;
   color: maroon;
 }
-.menus__page--2 .dishes {
+.menu--2 .dishes {
   font-size: 0.9rem;
   font-family: "Sriracha", sans-serif;
   text-align: left;
   color: maroon;
 }
-.menus__page--2 .dishes ul {
+.menu--2 .dishes ul {
   list-style-type: none;
 }
-.menus__page--2 .dishes li span {
-  align-self: right;
+.menu--2 .dishes li span {
+  float: right;
 }
 
 /*---------------------General--------------------*/
@@ -224,8 +252,5 @@ body {
   padding: 0;
   background-color: #fff;
 }
-
-/*---------------------Mixins---------------------*/
-/*--------------------Functions-------------------*/
 
 /*# sourceMappingURL=style.css.map */

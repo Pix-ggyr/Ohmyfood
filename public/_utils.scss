@@ -1,3 +1,7 @@
+/*-------------------Variables--------------------*/
+
+    //couleurs
+
 $clr-green:#579C87;
 $clr-yellow:#FDCB46;
 $clr-bg:#fff;
@@ -6,7 +10,16 @@ $chic-bg:#FFF5FE;
 $delice-bg:#F9F9F9;
 $palette-bg:#FDFFFD;
 
-//Mixins colors gradients//
+
+/*---------------------Mixins---------------------*/
+
+    //Gradients tools
+
+@mixin clipping-mask {
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}    
 
 @mixin grad-note {
     background: linear-gradient(90deg, #F05867, #F6916A);
@@ -24,13 +37,5 @@ $palette-bg:#FDFFFD;
     background: linear-gradient(70deg, #4C9F42, #BEFE7F);
 }
 
-//Header & footer colors//
 
-header, footer, .btn--soon {
-    background-color: $clr-green;
-}
-h1, h2, .btn--soon {
-    color:$clr-yellow;
-}
-
-
+/*-------------------Fonctions--------------------*/

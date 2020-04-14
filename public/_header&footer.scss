@@ -1,3 +1,10 @@
+header, footer, .btn--soon {
+    background-color: $clr-green;
+}
+h1, h2, .btn--soon {
+    color:$clr-yellow;
+}
+
 .title {
     height: 128px;
     display: flex;
