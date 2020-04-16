@@ -1,7 +1,7 @@
 /*--------------Imported stylesheets--------------*/
 /*-------------------Variables--------------------*/
 /*---------------------Mixins---------------------*/
-/*-------------------Functions--------------------*/
+/*------------------Media queries-------------------*/
 header, footer, .btn--soon {
   background-color: #579C87;
 }
@@ -81,7 +81,7 @@ h1, h2, .btn--soon {
 }
 .cards__list--1 .fas {
   font-size: 4rem;
-  background: linear-gradient(90deg, #F05867, #F6916A);
+  background: linear-gradient(120deg, #ff3c00, #fc9700);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -102,7 +102,7 @@ h1, h2, .btn--soon {
 }
 .cards__list--2 h2 {
   font-size: 1.8rem;
-  background: linear-gradient(90deg, #E08817, #9E70FD);
+  background: linear-gradient(80deg, #E08817, #9E70FD);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -119,7 +119,7 @@ h1, h2, .btn--soon {
 }
 .cards__list--3 h2 {
   font-size: 2.3rem;
-  background: linear-gradient(70deg, #4866E5, #2696FA);
+  background: linear-gradient(120deg, #0230fc, #05a8e9);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -136,7 +136,7 @@ h1, h2, .btn--soon {
 }
 .cards__list--4 h2 {
   font-size: 2.3rem;
-  background: linear-gradient(70deg, #4C9F42, #BEFE7F);
+  background: linear-gradient(70deg, #00c21a, #a6ff00);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -165,7 +165,7 @@ h1, h2, .btn--soon {
 }
 .menu--1 .fas {
   font-size: 3rem;
-  background: linear-gradient(90deg, #F05867, #F6916A);
+  background: linear-gradient(120deg, #ff3c00, #fc9700);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -179,9 +179,9 @@ h1, h2, .btn--soon {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  color: maroon;
-  height: 3px;
-  width: 90%;
+  background-color: maroon;
+  height: 4px;
+  width: 93%;
   border-radius: 5px;
 }
 .menu--1 h3 {
@@ -193,6 +193,7 @@ h1, h2, .btn--soon {
   font-family: "sriracha";
   color: maroon;
   background-color: #FCDFDB;
+  border-radius: 5rem;
 }
 .menu--1 .dishes {
   margin-top: 5px;
@@ -225,29 +226,94 @@ h1, h2, .btn--soon {
 }
 .menu--2 {
   background-color: #FFF5FE;
-  font-family: "croissant-one", sans-serif;
+  font-family: "Times New Roman", serif;
 }
 .menu--2 h2 {
+  margin-bottom: 40px;
+  font-family: "croissant one", sans-serif;
   font-size: 2rem;
-  background: linear-gradient(90deg, #E08817, #9E70FD);
+  background: linear-gradient(80deg, #E08817, #9E70FD);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
-.menu--2 h3 {
+.menu--2 .bar {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #BF6415;
+  height: 4px;
+  width: 93%;
+  border-radius: 5px;
+}
+.menu--2 .bar--2 {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #A66A9C;
+  height: 4px;
+  width: 93%;
+  border-radius: 5px;
+}
+.menu--2 .bar--3 {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #6249BF;
+  height: 4px;
+  width: 93%;
+  border-radius: 5px;
+}
+.menu--2 .field {
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
   font-size: 1.2rem;
-  font-family: "sriracha", sans-serif;
-  color: maroon;
+  font-family: "Times New Roman";
+  color: #BF6415;
+  background-color: #FFF5FE;
+  border-radius: 5rem;
+}
+.menu--2 .field--mid {
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-family: "Times New Roman";
+  color: #A66A9C;
+  background-color: #FFF5FE;
+  border-radius: 5rem;
+}
+.menu--2 .field--end {
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-family: "Times New Roman";
+  color: #6249BF;
+  background-color: #FFF5FE;
+  border-radius: 5rem;
 }
 .menu--2 .dishes {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 0.9rem;
-  font-family: "Sriracha", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: left;
-  color: maroon;
 }
 .menu--2 .dishes ul {
   display: block;
@@ -255,6 +321,153 @@ h1, h2, .btn--soon {
   padding-inline-start: unset;
 }
 .menu--2 .dishes li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.menu--2 .dishes--start {
+  color: #BF6415;
+}
+.menu--2 .dishes--mid {
+  color: #A66A9C;
+}
+.menu--2 .dishes--end {
+  color: #6249BF;
+}
+.menu--3 {
+  background-color: #F9F9F9;
+  font-family: "Sriracha", sans-serif;
+}
+.menu--3 h2 {
+  margin-bottom: 40px;
+  font-family: "dancing script", serif;
+  font-size: 3rem;
+  background: linear-gradient(120deg, #0230fc, #05a8e9);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu--3 .bar {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0230fc;
+  height: 4px;
+  width: 93%;
+  border-radius: 5px;
+}
+.menu--3 .bar--2 {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #008cff;
+  height: 4px;
+  width: 93%;
+  border-radius: 5px;
+}
+.menu--3 .bar--3 {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #05a8e9;
+  height: 4px;
+  width: 93%;
+  border-radius: 5px;
+}
+.menu--3 .field {
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-family: "Sriracha";
+  color: black;
+  background-color: #F9F9F9;
+  border-radius: 5rem;
+  font-weight: normal;
+}
+.menu--3 .dishes {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.menu--3 .dishes ul {
+  display: block;
+  list-style-type: none;
+  padding-inline-start: unset;
+}
+.menu--3 .dishes li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.menu--4 {
+  background-color: #FDFFFD;
+  font-family: "Sriracha", sans-serif;
+}
+.menu--4 h2 {
+  margin-bottom: 40px;
+  font-family: "kaushan script", serif;
+  font-size: 3rem;
+  background: linear-gradient(70deg, #00c21a, #a6ff00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu--4 .bar {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 93%;
+  height: 7px;
+  border-radius: 5px;
+  background: radial-gradient(circle, #a6ff00 30%, #00c21a);
+}
+.menu--4 .field {
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-family: "Sriracha";
+  color: black;
+  background-color: #FDFFFD;
+  border-radius: 5rem;
+  font-weight: normal;
+}
+.menu--4 .dishes {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.menu--4 .dishes ul {
+  display: block;
+  list-style-type: none;
+  padding-inline-start: unset;
+}
+.menu--4 .dishes li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

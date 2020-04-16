@@ -22,19 +22,23 @@ $palette-bg:#FDFFFD;
 }    
 
 @mixin grad-note {
-    background: linear-gradient(90deg, #F05867, #F6916A);
+    background: linear-gradient(120deg, rgb(255, 60, 0), rgb(252, 151, 0));
 }
 
 @mixin grad-chic {
-    background: linear-gradient(90deg, #E08817, #9E70FD);
+    background: linear-gradient(80deg, #E08817, #9E70FD);
 }
 
 @mixin grad-del {
-    background: linear-gradient(70deg, #4866E5, #2696FA);
+    background: linear-gradient(120deg, rgb(2, 48, 252), rgb(5, 168, 233));
 }
 
 @mixin grad-pal {
-    background: linear-gradient(70deg, #4C9F42, #BEFE7F);
+    background: linear-gradient(70deg, rgb(0, 194, 26), rgb(166, 255, 0));
+}
+
+@mixin radgrad-pal {
+    background: radial-gradient(circle, rgb(166, 255, 0) 30%, rgb(0, 194, 26));
 }
 
     //Menus display
@@ -80,10 +84,21 @@ $palette-bg:#FDFFFD;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    color: $clr;
-    height: 3px;
-    width: 90%;
+    background-color: $clr;
+    height: 4px;
+    width: 93%;
     border-radius: 5px;    
+}
+
+@mixin make-bars-palette {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 93%;
+    height: 7px;
+    border-radius: 5px;
+    @include radgrad-pal;    
 }
 
 @mixin menu-prop($font, $font-size, $clr, $bg-clr) {
@@ -95,6 +110,7 @@ $palette-bg:#FDFFFD;
     font-family: $font;
     color: $clr;
     background-color: $bg-clr;
+    border-radius: 5rem;
 }
 
-/*-------------------Functions--------------------*/
+/*------------------Media queries-------------------*/
