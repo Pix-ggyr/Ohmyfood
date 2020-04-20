@@ -1,7 +1,6 @@
 /*--------------Imported stylesheets--------------*/
 /*-------------------Variables--------------------*/
 /*---------------------Mixins---------------------*/
-/*------------------Media queries-------------------*/
 header, footer, .btn--soon {
   background-color: #579C87;
 }
@@ -30,12 +29,10 @@ h1, h2, .btn--soon {
 
 .btm {
   height: 96px;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  bottom: 0;
 }
 .btm__txt {
   font-size: 1rem;
@@ -50,6 +47,7 @@ h1, h2, .btn--soon {
 }
 .btn--soon {
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 1.6rem;
   margin: 4rem;
   padding: 1.3rem;
@@ -65,15 +63,15 @@ h1, h2, .btn--soon {
   padding: 60px, 0px;
 }
 .cards__list {
-  margin: 40px auto;
-  padding: 20px;
-  height: 45rem;
-  width: 36%;
-  box-shadow: 0px 0px 35px -5px darkgrey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  height: 45rem;
+  width: 33%;
+  box-shadow: 0px 0px 15px -5px grey;
 }
 .cards__list--1 {
   background-color: #FCDFDB;
@@ -149,15 +147,15 @@ h1, h2, .btn--soon {
 }
 
 .menu {
-  margin: 40px auto;
-  padding: 20px;
-  height: 45rem;
-  width: 36%;
-  box-shadow: 0px 0px 35px -5px darkgrey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  height: 45rem;
+  width: 33%;
+  box-shadow: 0px 0px 15px -5px grey;
 }
 .menu--1 {
   background-color: #FCDFDB;
@@ -474,6 +472,305 @@ h1, h2, .btn--soon {
   align-items: flex-start;
 }
 
+/*------------------Media queries-------------------*/
+@media screen and (max-width: 320px) {
+  .menu h2 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    margin-top: 2px;
+  }
+  .menu h3 {
+    font-size: 0.8rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .menu .field {
+    font-size: 0.8rem;
+  }
+  .menu .field--mid {
+    font-size: 0.8rem;
+  }
+  .menu .field--end {
+    font-size: 0.8rem;
+  }
+  .menu .bars {
+    height: 2px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title {
+    height: fit-content;
+  }
+  .title__h1 {
+    font-size: 2.5rem;
+  }
+
+  .btm {
+    height: fit-content;
+  }
+  .btm__txt {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    height: fit-content;
+    width: auto;
+  }
+  .btn--soon {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px, 0px;
+  }
+  .cards__list {
+    margin: 20px auto;
+    padding: 10px;
+    height: 30rem;
+    width: 80%;
+  }
+
+  .preview .fas {
+    font-size: 3rem;
+  }
+
+  .preview h2 {
+    font-size: 2.5rem;
+  }
+
+  .preview a {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    margin: 60px auto;
+    padding: 20px;
+    height: auto;
+    width: 85%;
+  }
+  .menu .fas {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+  .menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    margin-top: 2px;
+  }
+  .menu h3 {
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .menu .field {
+    font-size: 1.2rem;
+  }
+  .menu .field--mid {
+    font-size: 1.2rem;
+  }
+  .menu .field--end {
+    font-size: 1.2rem;
+  }
+  .menu .dishes {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .menu .title_mini h2 {
+    margin: 80px;
+    font-size: 1rem;
+    bottom: 0;
+  }
+  .menu .title_mini h2 .fas {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .btm {
+    height: fit-content;
+  }
+  .btm__txt {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    height: fit-content;
+    width: auto;
+  }
+  .btn--soon {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px, 0px;
+  }
+  .cards__list {
+    margin: 60px auto;
+    padding: 10px;
+    height: 37rem;
+    width: 42%;
+  }
+
+  .preview .fas {
+    font-size: 4rem;
+  }
+
+  .preview h2 {
+    font-size: 2.2rem;
+  }
+
+  .preview a {
+    font-size: 1.1rem;
+  }
+
+  .menu {
+    margin: 60px auto;
+    padding: 50px;
+    height: auto;
+    width: 80%;
+  }
+  .menu .fas {
+    font-size: 4rem;
+  }
+  .menu h2 {
+    font-size: 3rem;
+  }
+  .menu h3 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .menu .field {
+    font-size: 1.5rem;
+  }
+  .menu .field--mid {
+    font-size: 1.5rem;
+  }
+  .menu .field--end {
+    font-size: 1.5rem;
+  }
+  .menu .dishes {
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+  }
+  .menu .title_mini h2 {
+    margin: 80px;
+    font-size: 2rem;
+    bottom: 0;
+  }
+  .menu .title_mini h2 .fas {
+    font-size: 2rem;
+    padding: 0.3rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .title {
+    height: fit-content;
+  }
+  .title__h1 {
+    font-size: 8rem;
+  }
+
+  .btm {
+    height: fit-content;
+  }
+  .btm__txt {
+    font-size: 3rem;
+  }
+
+  .btn {
+    height: fit-content;
+    width: auto;
+  }
+  .btn--soon {
+    font-size: 5rem;
+    padding: 60px;
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px, 0px;
+  }
+  .cards__list {
+    margin: 60px auto;
+    padding: 10px;
+    height: 80rem;
+    width: 36%;
+  }
+
+  .preview .fas {
+    font-size: 8rem;
+  }
+
+  .preview h2 {
+    font-size: 6rem;
+  }
+
+  .preview a {
+    font-size: 3rem;
+  }
+
+  .menu {
+    margin: 60px auto;
+    padding: 50px;
+    height: 110rem;
+    width: 50%;
+  }
+  .menu .fas {
+    font-size: 8rem;
+  }
+  .menu h2 {
+    font-size: 6rem;
+  }
+  .menu h3 {
+    font-size: 3rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .menu .field {
+    font-size: 3rem;
+  }
+  .menu .field--mid {
+    font-size: 3rem;
+  }
+  .menu .field--end {
+    font-size: 3rem;
+  }
+  .menu .dishes {
+    line-height: 3rem;
+    font-size: 2.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .menu .title_mini h2 {
+    margin: 80px;
+    font-size: 4rem;
+    bottom: 0;
+  }
+  .menu .title_mini h2 .fas {
+    font-size: 4rem;
+    padding: 0.6rem;
+  }
+}
 /*---------------------General--------------------*/
 body {
   margin: 0;
