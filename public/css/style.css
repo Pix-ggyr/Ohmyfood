@@ -15,7 +15,7 @@ h1, h2, .btn--soon {
 }
 
 .title {
-  height: 128px;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ h1, h2, .btn--soon {
   padding: 0;
 }
 .title__h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -37,20 +37,23 @@ h1, h2, .btn--soon {
   height: 96px;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
 }
 .btm__txt a {
+  padding: 40px;
   color: #FDCB46;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
 .btn {
-  margin-bottom: 120px;
+  height: fit-content;
+  width: auto;
+  margin-bottom: 96px;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -70,7 +73,7 @@ h1, h2, .btn--soon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px, 0px;
+  padding: 60px, 60px;
 }
 .cards__list {
   display: flex;
@@ -554,16 +557,26 @@ h1, h2, .btn--soon {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-.btm__txt {
+.btm__txt:hover {
   animation: wiggle 1000ms infinite ease-in-out;
 }
 
-/*Underline h3 in menus*/
+/*Underlined h3 in menus*/
 .underline {
   cursor: pointer;
 }
+.underline--move {
+  width: 100%;
+  height: 3px;
+  color: black;
+  transform: scale(0);
+  transition: transform 1000ms ease;
+}
+.underline--move:hover {
+  transform: scale(1);
+}
 
-/*------------------Media queries-------------------*/
+/*-----------Media queries for frontpage------------*/
 /*Mobile Screen Display*/
 @media screen and (max-width: 576px) {
   .title {
@@ -577,13 +590,10 @@ h1, h2, .btn--soon {
     height: 64px;
   }
   .btm__txt a {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 10px;
   }
 
-  .btn {
-    height: fit-content;
-    width: auto;
-  }
   .btn--soon {
     font-size: 1.3rem;
     padding: 15px;
@@ -607,59 +617,23 @@ h1, h2, .btn--soon {
   .preview a {
     font-size: 1.2rem;
   }
-
-  .menu {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 20px;
-    height: auto;
-    width: 85%;
-  }
-  .menu .fas {
-    font-size: 2.5rem;
-    margin-top: 10px;
-  }
-  .menu h2 {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-    margin-top: 2px;
-  }
-  .menu h3 {
-    font-size: 1.2rem;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  .menu .field {
-    font-size: 1.2rem;
-  }
-  .menu .field--mid {
-    font-size: 1.2rem;
-  }
-  .menu .field--end {
-    font-size: 1.2rem;
-  }
-  .menu .dishes {
-    line-height: 1.5rem;
-    font-size: 0.9rem;
-  }
-  .menu .title_mini h2 {
-    margin: 20px;
-    font-size: 1rem;
-    bottom: 0;
-  }
-  .menu .title_mini h2 .fas {
-    font-size: 1rem;
-    padding: 0.3rem;
-  }
 }
 /*Tablet Screen Display*/
 @media screen and (min-width: 768px) {
+  .cards {
+    margin: auto;
+    width: 90%;
+  }
+  .cards__list {
+    margin: 20px;
+    padding: 20px;
+    min-width: 200px;
+    width: 250px;
+    height: 380px;
+  }
+
   .btm {
     height: 64px;
-  }
-  .btm__txt a {
-    font-size: 1.2rem;
   }
 
   .btn {
@@ -671,13 +645,6 @@ h1, h2, .btn--soon {
     padding: 20px;
   }
 
-  .cards__list {
-    margin: 60px auto;
-    padding: 10px;
-    height: 30rem;
-    width: 42%;
-  }
-
   .preview .fas {
     font-size: 4rem;
   }
@@ -687,7 +654,7 @@ h1, h2, .btn--soon {
   }
 
   .preview a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .menu {
@@ -734,352 +701,40 @@ h1, h2, .btn--soon {
 }
 /*Medium Screen Display*/
 @media screen and (min-width: 992px) {
-  .btm {
-    height: 64px;
-  }
-  .btm__txt a {
-    font-size: 1.3rem;
-  }
-
-  .btn {
-    height: fit-content;
-    width: auto;
-  }
-  .btn--soon {
-    font-size: 1.5rem;
-    padding: 20px;
-  }
-
   .cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 30px, 0px;
+    width: 80%;
   }
   .cards__list {
-    margin: 60px auto;
-    padding: 10px;
-    height: 32rem;
-    width: 36%;
-  }
-
-  .preview .fas {
-    font-size: 4rem;
-  }
-
-  .preview h2 {
-    font-size: 2.2rem;
-  }
-
-  .preview a {
-    font-size: 1.1rem;
-  }
-
-  .menu {
-    margin-top: 60px;
-    margin-bottom: 130px;
-    padding: 50px;
-    height: 57rem;
-    width: 60%;
-  }
-  .menu .fas {
-    font-size: 3rem;
-  }
-  .menu h2 {
-    font-size: 3rem;
-  }
-  .menu h3 {
-    font-size: 1.5rem;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  .menu .field {
-    font-size: 1.5rem;
-  }
-  .menu .field--mid {
-    font-size: 1.5rem;
-  }
-  .menu .field--end {
-    font-size: 1.5rem;
-  }
-  .menu .dishes {
-    line-height: 2.2rem;
-    font-size: 1.2rem;
-  }
-  .menu .title_mini h2 {
-    margin: 80px;
-    font-size: 2rem;
-    bottom: 0;
-  }
-  .menu .title_mini h2 .fas {
-    font-size: 2rem;
-    padding: 0.3rem;
+    width: 320px;
+    height: 450px;
   }
 }
 /*Large Screen Display*/
 @media screen and (min-width: 1200px) {
+  .cards__list {
+    width: 450px;
+    height: 620px;
+  }
+
   .btm {
     height: 72px;
-  }
-  .btm__txt a {
-    font-size: 1.5rem;
-  }
-
-  .btn {
-    height: fit-content;
-    width: auto;
-  }
-  .btn--soon {
-    font-size: 1.8rem;
-    padding: 20px;
-  }
-
-  .cards__list {
-    margin: 60px auto;
-    padding: 10px;
-    height: 42rem;
-    width: 36%;
-  }
-
-  .preview .fas {
-    font-size: 4rem;
-  }
-
-  .preview h2 {
-    font-size: 2.9rem;
-  }
-
-  .preview a {
-    font-size: 1.7rem;
-  }
-
-  .menu {
-    margin-top: 60px;
-    margin-bottom: 140px;
-    padding: 50px;
-    height: 57rem;
-    width: 50%;
-  }
-  .menu .fas {
-    font-size: 4rem;
-  }
-  .menu h2 {
-    font-size: 3rem;
-  }
-  .menu h3 {
-    font-size: 1.5rem;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  .menu .field {
-    font-size: 1.5rem;
-  }
-  .menu .field--mid {
-    font-size: 1.5rem;
-  }
-  .menu .field--end {
-    font-size: 1.5rem;
-  }
-  .menu .dishes {
-    line-height: 2.2rem;
-    font-size: 1.2rem;
-  }
-  .menu .title_mini h2 {
-    margin: 80px;
-    font-size: 2rem;
-    bottom: 0;
-  }
-  .menu .title_mini h2 .fas {
-    font-size: 2rem;
-    padding: 0.3rem;
   }
 }
 /*Full HD Screen Display*/
 @media screen and (min-width: 1920px) {
-  .btm {
-    height: 96px;
+  .cards {
+    width: 70%;
   }
-  .btm__txt a {
-    font-size: 1.8rem;
+  .cards__list {
+    width: 520px;
+    height: 720px;
   }
 
-  .btn {
-    height: fit-content;
-    width: auto;
-  }
   .btn--soon {
     font-size: 2.2rem;
-    padding: 20px;
-  }
-
-  .cards__list {
-    margin: 60px auto;
-    padding: 10px;
-    height: 52rem;
-    width: 33%;
-  }
-
-  .preview .fas {
-    font-size: 4rem;
-  }
-
-  .preview h2 {
-    font-size: 3.2rem;
-  }
-
-  .preview a {
-    font-size: 1.9rem;
-  }
-
-  .cards__list--2 h2 {
-    font-size: 2.8rem;
-  }
-
-  .menu {
-    margin-top: 60px;
-    margin-bottom: 160px;
-    padding: 50px;
-    height: auto;
-    width: 34%;
-  }
-  .menu .fas {
-    font-size: 4rem;
-  }
-  .menu h2 {
-    font-size: 3rem;
-  }
-  .menu h3 {
-    font-size: 1.5rem;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  .menu .field {
-    font-size: 1.5rem;
-  }
-  .menu .field--mid {
-    font-size: 1.5rem;
-  }
-  .menu .field--end {
-    font-size: 1.5rem;
-  }
-  .menu .dishes {
-    line-height: 2.2rem;
-    font-size: 1.2rem;
-  }
-  .menu .title_mini h2 {
-    margin: 80px;
-    font-size: 2rem;
-    bottom: 0;
-  }
-  .menu .title_mini h2 .fas {
-    font-size: 2rem;
-    padding: 0.3rem;
   }
 }
 /*4K Screen Display*/
-@media screen and (min-width: 2560px) {
-  .title {
-    height: fit-content;
-  }
-  .title__h1 {
-    font-size: 8rem;
-  }
-
-  .btm {
-    height: 196px;
-  }
-  .btm__txt a {
-    font-size: 4rem;
-  }
-
-  .btn {
-    margin-bottom: 250px;
-    height: fit-content;
-    width: auto;
-  }
-  .btn--soon {
-    font-size: 5rem;
-    padding: 60px;
-  }
-
-  .cards__list {
-    margin: 60px auto;
-    padding: 10px;
-    height: 80rem;
-    width: 36%;
-  }
-
-  .preview .fas {
-    font-size: 8rem;
-  }
-
-  .preview h2 {
-    font-size: 6rem;
-  }
-
-  .preview a {
-    font-size: 3rem;
-  }
-
-  .cards__list--2 h2 {
-    font-size: 4.5rem;
-  }
-
-  .menu {
-    margin-top: 120px;
-    margin-bottom: 320px;
-    padding: 50px;
-    height: 110rem;
-    width: 50%;
-  }
-  .menu .fas {
-    font-size: 8rem;
-  }
-  .menu h2 {
-    font-size: 6rem;
-    margin-bottom: 160px;
-  }
-  .menu .menu .menu--1 h2 {
-    margin: 0px;
-    padding: 0px;
-  }
-  .menu h3 {
-    font-size: 3rem;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  .menu .field {
-    font-size: 3rem;
-  }
-  .menu .field--mid {
-    font-size: 3rem;
-  }
-  .menu .field--end {
-    font-size: 3rem;
-  }
-  .menu .dishes {
-    line-height: 3.5rem;
-    font-size: 2.1rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 2.3rem;
-    padding-right: 2.3rem;
-  }
-  .menu .title_mini h2 {
-    margin: 120px;
-    font-size: 3.5rem;
-    bottom: 0;
-  }
-  .menu .title_mini h2 .fas {
-    font-size: 3.5rem;
-    padding: 0.6rem;
-  }
-}
 /*---------------------General--------------------*/
 body {
   margin: 0;

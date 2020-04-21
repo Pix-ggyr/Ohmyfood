@@ -53,11 +53,24 @@
 }
 
 .btm__txt {
+    &:hover {
     animation: wiggle 1000ms infinite ease-in-out;
+    }
 }
 
-    /*Underline h3 in menus*/
+    /*Underlined h3 in menus*/
 
 .underline {
     cursor: pointer;
+    &--move {
+        width: 100%;
+        height: 3px;
+        color: black;
+        transform: scale(0);
+        transition: transform 1000ms ease;
+        &:hover {  
+            transform: scale(1);
+        }
+    }
 }
+

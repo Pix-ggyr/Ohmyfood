@@ -1,0 +1,166 @@
+/*-----------Media queries for frontpage------------*/
+
+    /*Mobile Screen Display*/ 
+@media screen and (max-width: 576px) {
+    .title {
+        height: fit-content;
+        &__h1 {
+            font-size: 2.5rem;
+        }
+    }
+    .btm {
+        height: 64px;
+        &__txt a {
+            font-size: 1.1rem;
+            padding: 10px;
+        }
+    }
+    .btn--soon {
+        font-size: 1.3rem;
+        padding: 15px;      
+    }
+    .cards {
+        &__list {
+        margin: 20px auto;
+        padding: 10px;
+        height: 26rem;
+        width: 80%;    
+        }
+    }        
+    .preview .fas {
+        font-size: 3rem;
+    }
+    .preview h2 {
+        font-size: 2.5rem;
+    }
+    .preview a {
+        font-size: 1.2rem;
+    }
+}
+
+    /*Tablet Screen Display*/ 
+@media screen and (min-width: 768px) {
+    .cards {
+        margin: auto;
+        width: 90%;
+        &__list {
+        margin: 20px;
+        padding: 20px;
+        min-width: 200px;
+        width: 250px;    
+        height: 380px;
+        }
+    }
+
+    .btm {
+        height: 64px;
+    }
+    .btn {
+        height: fit-content;
+        width: auto;
+            &--soon {
+                font-size: 1.5rem;
+                padding: 20px;
+            }      
+    }  
+
+    .preview .fas {
+        font-size: 4rem;
+    }
+    .preview h2 {
+        font-size: 2.2rem;
+    }
+    .preview a {
+        font-size: 1.3rem;
+    }
+
+    .menu {
+        margin-top: 60px;
+        margin-bottom: 120px;
+        padding: 50px;
+        height:auto;
+        width: 80%;
+            .fas {
+            font-size: 4rem;    
+            }
+            h2 {
+            font-size: 3rem;
+            }
+            h3 {
+            font-size: 1.5rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            }
+            .field {
+            font-size: 1.5rem;
+                &--mid {
+                    font-size: 1.5rem;
+                }
+                &--end {
+                    font-size: 1.5rem;
+                }
+            }
+            .dishes {
+            line-height: 2.2rem;
+            font-size: 1.2rem;
+            }
+            .title_mini h2 {
+                margin: 80px;
+                font-size: 2rem;
+                bottom: 0;
+                .fas {
+                    font-size: 2rem;
+                    padding: 0.3rem;
+                }
+            }
+        
+    }    
+}   
+
+    /*Medium Screen Display*/ 
+@media screen and (min-width: 992px) {
+    .cards {
+        width: 80%;
+        &__list {
+            width: 320px;
+            height: 450px;
+        }
+    }
+}   
+
+    /*Large Screen Display*/ 
+@media screen and (min-width: 1200px) {
+    .cards {
+        &__list {
+            width: 450px;
+            height: 620px;
+        }
+    }
+    .btm {
+    height: 72px;
+    }
+} 
+
+    /*Full HD Screen Display*/ 
+@media screen and (min-width: 1920px) {
+    .cards {
+        width: 70%;
+        &__list {
+            width: 520px;
+            height: 720px;
+        }
+    }
+    .btn--soon {
+        font-size: 2.2rem;   
+    }        
+}
+    /*4K Screen Display*/
+@media screen and (min-width: 2560px) {
+
+    
+}
+
+    
+
+
