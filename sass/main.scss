@@ -1,0 +1,29 @@
+
+/*--------------Imported stylesheets--------------*/
+
+@import 'layout/utils.scss';
+@import 'pages/header&footer.scss';
+@import 'pages/button.scss';
+@import 'pages/card.scss';
+@import 'pages/menu.scss';
+@import 'layout/animations.scss';
+@import 'layout/media-queries.scss';
+
+
+    /*---------------------General--------------------*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $clr-bg;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: justify;
+    margin: 50px;
+    padding: 20px;
+}

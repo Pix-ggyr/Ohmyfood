@@ -1,0 +1,516 @@
+/*------------------Media queries-------------------*/
+
+    /*Mobile Screen Display*/ 
+@media screen and (max-width: 576px) {
+    .title {
+        height: fit-content;
+        &__h1 {
+            font-size: 2.5rem;
+        }
+    }
+    .btm {
+        height: 64px;
+        &__txt a {
+            font-size: 1rem;
+        }
+    }
+    .btn {
+        height: fit-content;
+        width: auto;
+            &--soon {
+                font-size: 1.3rem;
+                padding: 15px;
+            }      
+    }
+    .cards {
+        &__list {
+        margin: 20px auto;
+        padding: 10px;
+        height: 26rem;
+        width: 80%;    
+        }
+    }        
+    .preview .fas {
+        font-size: 3rem;
+    }
+    .preview h2 {
+        font-size: 2.5rem;
+    }
+    .preview a {
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        margin-top:20px;
+        margin-bottom: 10px;
+        padding: 20px;
+        height:auto;
+        width: 85%;
+            .fas {
+            font-size: 2.5rem;
+            margin-top: 10px;    
+            }
+            h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            margin-top: 2px;
+            }
+            h3 {
+            font-size: 1.2rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            }
+            .field {
+            font-size: 1.2rem;
+                &--mid {
+                    font-size: 1.2rem;
+                }
+                &--end {
+                    font-size: 1.2rem;
+                }
+            }
+            .dishes {
+            line-height: 1.5rem;
+            font-size: 0.9rem;
+            }
+            .title_mini h2 {
+                margin: 20px;
+                font-size: 1rem;
+                bottom: 0;
+                .fas {
+                    font-size: 1rem;
+                    padding: 0.3rem;
+                }
+            }
+        
+    }    
+}
+
+    /*Tablet Screen Display*/ 
+@media screen and (min-width: 768px) {
+
+    .btm {
+        height: 64px;
+        &__txt a {
+            font-size: 1.2rem;
+        }
+    }
+    .btn {
+        height: fit-content;
+        width: auto;
+            &--soon {
+                font-size: 1.5rem;
+                padding: 20px;
+            }      
+    }
+    .cards {
+        &__list {
+        margin: 60px auto;
+        padding: 10px;
+        height: 30rem;
+        width: 42%;
+        }
+    }        
+    .preview .fas {
+        font-size: 4rem;
+    }
+    .preview h2 {
+        font-size: 2.2rem;
+    }
+    .preview a {
+        font-size: 1.1rem;
+    }
+
+    .menu {
+        margin-top: 60px;
+        margin-bottom: 120px;
+        padding: 50px;
+        height:auto;
+        width: 80%;
+            .fas {
+            font-size: 4rem;    
+            }
+            h2 {
+            font-size: 3rem;
+            }
+            h3 {
+            font-size: 1.5rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            }
+            .field {
+            font-size: 1.5rem;
+                &--mid {
+                    font-size: 1.5rem;
+                }
+                &--end {
+                    font-size: 1.5rem;
+                }
+            }
+            .dishes {
+            line-height: 2.2rem;
+            font-size: 1.2rem;
+            }
+            .title_mini h2 {
+                margin: 80px;
+                font-size: 2rem;
+                bottom: 0;
+                .fas {
+                    font-size: 2rem;
+                    padding: 0.3rem;
+                }
+            }
+        
+    }    
+}   
+
+    /*Medium Screen Display*/ 
+@media screen and (min-width: 992px) {
+
+    .btm {
+        height: 64px;
+        &__txt a {
+            font-size: 1.3rem;
+        }
+    }
+    .btn {
+        height: fit-content;
+        width: auto;
+            &--soon {
+                font-size: 1.5rem;
+                padding: 20px;
+            }      
+    }
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 30px, 0px;
+            &__list {
+            margin: 60px auto;
+            padding: 10px;
+            height: 32rem;
+            width: 36%;
+            }
+    }        
+    .preview .fas {
+        font-size: 4rem;
+    }
+    .preview h2 {
+        font-size: 2.2rem;
+    }
+    .preview a {
+        font-size: 1.1rem;
+    }
+
+    .menu {
+        margin-top: 60px;
+        margin-bottom: 130px;
+        padding: 50px;
+        height:57rem;
+        width: 60%;
+            .fas {
+            font-size: 3rem;   
+            }
+            h2 {
+            font-size: 3rem;
+            }
+            h3 {
+            font-size: 1.5rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            }
+            .field {
+            font-size: 1.5rem;
+                &--mid {
+                    font-size: 1.5rem;
+                }
+                &--end {
+                    font-size: 1.5rem;
+                }
+            }
+            .dishes {
+            line-height: 2.2rem;
+            font-size: 1.2rem;
+            }
+            .title_mini h2 {
+                margin: 80px;
+                font-size: 2rem;
+                bottom: 0;
+                .fas {
+                    font-size: 2rem;
+                    padding: 0.3rem;
+                }
+            }
+        
+    }    
+}   
+
+    /*Large Screen Display*/ 
+@media screen and (min-width: 1200px) {
+
+    .btm {
+        height: 72px;
+        &__txt a {
+            font-size: 1.5rem;
+        }
+    }
+    .btn {
+        height: fit-content;
+        width: auto;
+            &--soon {
+                font-size: 1.8rem;
+                padding: 20px;
+            }      
+    }
+    .cards {
+        &__list {
+        margin: 60px auto;
+        padding: 10px;
+        height: 42rem;
+        width: 36%;
+        }
+    }        
+    .preview .fas {
+        font-size: 4rem;
+    }
+    .preview h2 {
+        font-size: 2.9rem;
+    }
+    .preview a {
+        font-size: 1.7rem;
+    }
+
+    .menu {
+        margin-top: 60px;
+        margin-bottom: 140px;
+        padding: 50px;
+        height:57rem;
+        width: 50%;
+            .fas {
+            font-size: 4rem;    
+            }
+            h2 {
+            font-size: 3rem;
+            }
+            h3 {
+            font-size: 1.5rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            }
+            .field {
+            font-size: 1.5rem;
+                &--mid {
+                    font-size: 1.5rem;
+                }
+                &--end {
+                    font-size: 1.5rem;
+                }
+            }
+            .dishes {
+            line-height: 2.2rem;
+            font-size: 1.2rem;
+            }
+            .title_mini h2 {
+                margin: 80px;
+                font-size: 2rem;
+                bottom: 0;
+                .fas {
+                    font-size: 2rem;
+                    padding: 0.3rem;
+                }
+            }
+        
+    }    
+} 
+
+    /*Full HD Screen Display*/ 
+@media screen and (min-width: 1920px) {
+
+    .btm {
+        height: 96px;
+        &__txt a {
+            font-size: 1.8rem;
+        }
+    }
+    .btn {
+        height: fit-content;
+        width: auto;
+            &--soon {
+                font-size: 2.2rem;
+                padding: 20px;
+            }      
+    }
+    .cards {
+        &__list {
+        margin: 60px auto;
+        padding: 10px;
+        height: 52rem;
+        width: 33%;
+        }
+    }        
+    .preview .fas {
+        font-size: 4rem;
+    }
+    .preview h2 {
+        font-size: 3.2rem;
+    }
+    .preview a {
+        font-size: 1.9rem;
+    }
+    .cards__list--2 h2 {
+        font-size: 2.8rem;
+    }
+
+    .menu {
+        margin-top: 60px;
+        margin-bottom: 160px;
+        padding: 50px;
+        height:auto;
+        width: 34%;
+            .fas {
+            font-size: 4rem;    
+            }
+            h2 {
+            font-size: 3rem;
+            }
+            h3 {
+            font-size: 1.5rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            }
+            .field {
+            font-size: 1.5rem;
+                &--mid {
+                    font-size: 1.5rem;
+                }
+                &--end {
+                    font-size: 1.5rem;
+                }
+            }
+            .dishes {
+            line-height: 2.2rem;
+            font-size: 1.2rem;
+            }
+            .title_mini h2 {
+                margin: 80px;
+                font-size: 2rem;
+                bottom: 0;
+                .fas {
+                    font-size: 2rem;
+                    padding: 0.3rem;
+                }
+            }
+        
+    }    
+} 
+
+    /*4K Screen Display*/
+@media screen and (min-width: 2560px) {
+    
+    .title {
+        height: fit-content;
+        &__h1 {
+            font-size: 8rem;
+        }
+    }
+    .btm {
+        height: 196px;
+        &__txt a {   
+            font-size: 4rem;
+        }
+    }
+    .btn {
+        margin-bottom: 250px;
+        height: fit-content;
+        width: auto;
+            &--soon {
+                font-size: 5rem;
+                padding: 60px;
+            }      
+    }
+    .cards {
+        &__list {
+        margin: 60px auto;
+        padding: 10px;
+        height: 80rem;
+        width: 36%;
+        }
+    }        
+    .preview .fas {
+        font-size: 8rem;
+    }
+    .preview h2 {
+        font-size: 6rem;
+    }
+    .preview a {
+        font-size: 3rem;
+    }
+    .cards__list--2 h2 {
+        font-size: 4.5rem;
+    }
+
+    .menu {
+        margin-top: 120px;
+        margin-bottom: 320px;
+        padding: 50px;
+        height:110rem;
+        width: 50%;
+            .fas {
+            font-size: 8rem;    
+            }
+            h2 {
+            font-size: 6rem;
+            margin-bottom: 160px;
+            }
+
+            .menu .menu--1 h2 {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            h3 {
+            font-size: 3rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            }
+            .field {
+            font-size: 3rem;
+                &--mid {
+                    font-size: 3rem;
+                }
+                &--end {
+                    font-size: 3rem;
+                }
+            }
+            .dishes {
+            line-height: 3.5rem;
+            font-size: 2.1rem;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-left: 2.3rem;
+            padding-right: 2.3rem;
+            }
+            .title_mini h2 {
+                margin: 120px;
+                font-size: 3.5rem;
+                bottom: 0;
+                .fas {
+                    font-size: 3.5rem;
+                    padding: 0.6rem;
+                }
+            }
+        
+    }    
+}
+
+    
+
+

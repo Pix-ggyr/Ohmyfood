@@ -1,6 +1,6 @@
 /*-------------------Variables--------------------*/
 
-    //couleurs
+    /*Colors*/
 
 $clr-green:#579C87;
 $clr-yellow:#FDCB46;
@@ -13,7 +13,7 @@ $palette-bg:#FDFFFD;
 
 /*---------------------Mixins---------------------*/
 
-    //Gradients tools
+    /*Gradients tools*/
 
 @mixin clipping-mask {
     background-clip: border-box;
@@ -41,7 +41,7 @@ $palette-bg:#FDFFFD;
     background: radial-gradient(circle, rgb(166, 255, 0) 30%, rgb(0, 194, 26));
 }
 
-    //Menus display
+    /*Menus display*/
 
 @mixin box {
     display: flex;
@@ -50,7 +50,7 @@ $palette-bg:#FDFFFD;
     text-align: center;
     margin: 40px auto ;
     padding:20px;
-    height: 45rem;
+    height: 70rem;
     width: 33%;
     box-shadow: 0px 0px 15px -5px grey;
 }
@@ -61,7 +61,7 @@ $palette-bg:#FDFFFD;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-    //Align price
+    /*Align price*/
 
 @mixin price-align-right {
     ul {
@@ -77,7 +77,7 @@ $palette-bg:#FDFFFD;
     }
 }
 
-        //h3 decorations
+        /*h3 Bars*/
 
 @mixin make-bars($clr) {
     display: inline-flex;
