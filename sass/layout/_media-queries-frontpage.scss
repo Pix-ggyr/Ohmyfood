@@ -73,49 +73,6 @@
     .preview a {
         font-size: 1.3rem;
     }
-
-    .menu {
-        margin-top: 60px;
-        margin-bottom: 120px;
-        padding: 50px;
-        height:auto;
-        width: 80%;
-            .fas {
-            font-size: 4rem;    
-            }
-            h2 {
-            font-size: 3rem;
-            }
-            h3 {
-            font-size: 1.5rem;
-            line-height: 30px;
-            margin-bottom: 30px;
-            margin-top: 30px;
-            }
-            .field {
-            font-size: 1.5rem;
-                &--mid {
-                    font-size: 1.5rem;
-                }
-                &--end {
-                    font-size: 1.5rem;
-                }
-            }
-            .dishes {
-            line-height: 2.2rem;
-            font-size: 1.2rem;
-            }
-            .title_mini h2 {
-                margin: 80px;
-                font-size: 2rem;
-                bottom: 0;
-                .fas {
-                    font-size: 2rem;
-                    padding: 0.3rem;
-                }
-            }
-        
-    }    
 }   
 
     /*Medium Screen Display*/ 

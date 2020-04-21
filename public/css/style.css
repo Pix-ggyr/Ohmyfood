@@ -6,6 +6,7 @@
 /*Menus display*/
 /*Align price*/
 /*h3 Bars*/
+/*h3 underline motion effect*/
 header, footer, .btn--soon {
   background-color: #579C87;
 }
@@ -81,9 +82,10 @@ h1, h2, .btn--soon {
   justify-content: center;
   text-align: center;
   margin: 40px auto;
+  margin-bottom: 120px;
   padding: 20px;
-  height: 70rem;
-  width: 33%;
+  width: 520px;
+  height: 720px;
   box-shadow: 0px 0px 15px -5px grey;
 }
 .cards__list--1 {
@@ -165,9 +167,10 @@ h1, h2, .btn--soon {
   justify-content: center;
   text-align: center;
   margin: 40px auto;
+  margin-bottom: 120px;
   padding: 20px;
-  height: 70rem;
-  width: 33%;
+  width: 520px;
+  height: 720px;
   box-shadow: 0px 0px 15px -5px grey;
 }
 .menu--1 {
@@ -563,17 +566,98 @@ h1, h2, .btn--soon {
 
 /*Underlined h3 in menus*/
 .underline {
-  cursor: pointer;
+  position: relative;
 }
-.underline--move {
-  width: 100%;
+.underline::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  display: block;
+  margin-top: 2px;
   height: 3px;
-  color: black;
-  transform: scale(0);
-  transition: transform 1000ms ease;
+  width: 0;
+  right: 0;
+  transition: width 1s ease;
 }
-.underline--move:hover {
-  transform: scale(1);
+.underline:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.underline-note {
+  position: relative;
+}
+.underline-note::after {
+  content: "";
+  background-color: maroon;
+  position: absolute;
+  display: block;
+  margin-top: 2px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: width 1s ease;
+}
+.underline-note:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.underline-chic-start {
+  position: relative;
+}
+.underline-chic-start::after {
+  content: "";
+  background-color: #BF6415;
+  position: absolute;
+  display: block;
+  margin-top: 2px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: width 1s ease;
+}
+.underline-chic-start:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.underline-chic-mid {
+  position: relative;
+}
+.underline-chic-mid::after {
+  content: "";
+  background-color: #A66A9C;
+  position: absolute;
+  display: block;
+  margin-top: 2px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: width 1s ease;
+}
+.underline-chic-mid:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.underline-chic-end {
+  position: relative;
+}
+.underline-chic-end::after {
+  content: "";
+  background-color: #6249BF;
+  position: absolute;
+  display: block;
+  margin-top: 2px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: width 1s ease;
+}
+.underline-chic-end:hover::after {
+  left: 0;
+  width: 100%;
 }
 
 /*-----------Media queries for frontpage------------*/
@@ -655,48 +739,6 @@ h1, h2, .btn--soon {
 
   .preview a {
     font-size: 1.3rem;
-  }
-
-  .menu {
-    margin-top: 60px;
-    margin-bottom: 120px;
-    padding: 50px;
-    height: auto;
-    width: 80%;
-  }
-  .menu .fas {
-    font-size: 4rem;
-  }
-  .menu h2 {
-    font-size: 3rem;
-  }
-  .menu h3 {
-    font-size: 1.5rem;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  .menu .field {
-    font-size: 1.5rem;
-  }
-  .menu .field--mid {
-    font-size: 1.5rem;
-  }
-  .menu .field--end {
-    font-size: 1.5rem;
-  }
-  .menu .dishes {
-    line-height: 2.2rem;
-    font-size: 1.2rem;
-  }
-  .menu .title_mini h2 {
-    margin: 80px;
-    font-size: 2rem;
-    bottom: 0;
-  }
-  .menu .title_mini h2 .fas {
-    font-size: 2rem;
-    padding: 0.3rem;
   }
 }
 /*Medium Screen Display*/

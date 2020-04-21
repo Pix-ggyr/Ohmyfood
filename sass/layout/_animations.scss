@@ -61,16 +61,26 @@
     /*Underlined h3 in menus*/
 
 .underline {
-    cursor: pointer;
-    &--move {
-        width: 100%;
-        height: 3px;
-        color: black;
-        transform: scale(0);
-        transition: transform 1000ms ease;
-        &:hover {  
-            transform: scale(1);
-        }
-    }
+    position: relative;
+    @include underlined(black);    
 }
 
+.underline-note {
+    position: relative;
+    @include underlined (maroon);
+}
+
+.underline-chic-start {
+    position: relative;
+    @include underlined (#BF6415)
+}
+
+.underline-chic-mid {
+    position: relative;
+    @include underlined (#A66A9C)    
+}
+
+.underline-chic-end {
+    position: relative;
+    @include underlined (#6249BF)    
+}
