@@ -1,0 +1,62 @@
+/*-----------Media queries for menus------------*/
+
+    /*Mobile Screen Display*/
+@media screen and (max-width : 576px) {
+    .menu {
+        height:fit-content;
+        width: 300px;
+        margin: 10px auto;
+        padding: 2px;
+        h2 {
+            font-size: 1.7rem;
+            margin: 20px;
+        }
+    }
+    .menu--1 h2 {
+        margin-top: -2px;
+    }
+    .menu--2 h2 {
+        font-size: 1.2rem;
+    }
+    .menu .fas {
+        margin-top: 20px;
+        font-size:1.7rem;
+    }
+    .bar {
+        line-height: 1.8rem;
+    }
+    .underline-note {
+        font-size: 0.9rem;
+    }
+    .underline-chic {
+    &--start {
+        font-size: 0.9rem;
+    }
+    &--mid {
+        font-size: 0.9rem;
+    }
+    &--end {
+        font-size: 0.9rem;
+    }
+    }
+    .underline {
+        font-size: 0.9rem;
+    }
+    .dishes li {
+        font-size: 0.7rem;
+    }
+    .menu--2 .dishes li {
+        font-size: 0.8rem;
+    }
+    .menu--1 .title_mini h2 {
+        margin-top: 2px;
+        font-size: 1rem;
+        .fas {
+            font-size: 1rem;
+        }
+    }
+    .btm {
+        bottom:auto;
+    }
+}
+

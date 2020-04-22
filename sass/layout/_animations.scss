@@ -70,17 +70,16 @@
     @include underlined (maroon);
 }
 
-.underline-chic-start {
+.underline-chic {
     position: relative;
+    &--start {
     @include underlined (#BF6415)
-}
-
-.underline-chic-mid {
-    position: relative;
+    }
+    &--mid {
     @include underlined (#A66A9C)    
-}
-
-.underline-chic-end {
+    }
+    &--end {
     position: relative;
-    @include underlined (#6249BF)    
+    @include underlined (#6249BF)
+    }
 }

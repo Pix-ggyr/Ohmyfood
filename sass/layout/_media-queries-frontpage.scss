@@ -28,13 +28,16 @@
         }
     }        
     .preview .fas {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .preview h2 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+    }
+    .cards__list--2 h2 {
+        font-size: 1.4rem;
     }
     .preview a {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -51,7 +54,6 @@
         height: 380px;
         }
     }
-
     .btm {
         height: 64px;
     }
@@ -63,15 +65,21 @@
                 padding: 20px;
             }      
     }  
-
     .preview .fas {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
     .preview h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .preview a {
-        font-size: 1.3rem;
+        font-size: 1rem;
+    }
+
+    .cards__list--2 h2 {
+        font-size: 1.6rem;
+    }
+    .cards__list--4 h2 {
+        font-size: 1.8rem;
     }
 }   
 
@@ -112,6 +120,7 @@
         font-size: 2.2rem;   
     }        
 }
+
     /*4K Screen Display*/
 @media screen and (min-width: 2560px) {
 

@@ -603,10 +603,10 @@ h1, h2, .btn--soon {
   width: 100%;
 }
 
-.underline-chic-start {
+.underline-chic {
   position: relative;
 }
-.underline-chic-start::after {
+.underline-chic--start::after {
   content: "";
   background-color: #BF6415;
   position: absolute;
@@ -617,15 +617,11 @@ h1, h2, .btn--soon {
   right: 0;
   transition: width 1s ease;
 }
-.underline-chic-start:hover::after {
+.underline-chic--start:hover::after {
   left: 0;
   width: 100%;
 }
-
-.underline-chic-mid {
-  position: relative;
-}
-.underline-chic-mid::after {
+.underline-chic--mid::after {
   content: "";
   background-color: #A66A9C;
   position: absolute;
@@ -636,15 +632,14 @@ h1, h2, .btn--soon {
   right: 0;
   transition: width 1s ease;
 }
-.underline-chic-mid:hover::after {
+.underline-chic--mid:hover::after {
   left: 0;
   width: 100%;
 }
-
-.underline-chic-end {
+.underline-chic--end {
   position: relative;
 }
-.underline-chic-end::after {
+.underline-chic--end::after {
   content: "";
   background-color: #6249BF;
   position: absolute;
@@ -655,7 +650,7 @@ h1, h2, .btn--soon {
   right: 0;
   transition: width 1s ease;
 }
-.underline-chic-end:hover::after {
+.underline-chic--end:hover::after {
   left: 0;
   width: 100%;
 }
@@ -691,15 +686,19 @@ h1, h2, .btn--soon {
   }
 
   .preview .fas {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .preview h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  .cards__list--2 h2 {
+    font-size: 1.4rem;
   }
 
   .preview a {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 /*Tablet Screen Display*/
@@ -730,15 +729,23 @@ h1, h2, .btn--soon {
   }
 
   .preview .fas {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .preview h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .preview a {
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .cards__list--2 h2 {
+    font-size: 1.6rem;
+  }
+
+  .cards__list--4 h2 {
+    font-size: 1.8rem;
   }
 }
 /*Medium Screen Display*/
@@ -777,6 +784,75 @@ h1, h2, .btn--soon {
   }
 }
 /*4K Screen Display*/
+/*-----------Media queries for menus------------*/
+/*Mobile Screen Display*/
+@media screen and (max-width: 576px) {
+  .menu {
+    height: fit-content;
+    width: 300px;
+    margin: 10px auto;
+    padding: 2px;
+  }
+  .menu h2 {
+    font-size: 1.7rem;
+    margin: 20px;
+  }
+
+  .menu--1 h2 {
+    margin-top: -2px;
+  }
+
+  .menu--2 h2 {
+    font-size: 1.2rem;
+  }
+
+  .menu .fas {
+    margin-top: 20px;
+    font-size: 1.7rem;
+  }
+
+  .bar {
+    line-height: 1.8rem;
+  }
+
+  .underline-note {
+    font-size: 0.9rem;
+  }
+
+  .underline-chic--start {
+    font-size: 0.9rem;
+  }
+  .underline-chic--mid {
+    font-size: 0.9rem;
+  }
+  .underline-chic--end {
+    font-size: 0.9rem;
+  }
+
+  .underline {
+    font-size: 0.9rem;
+  }
+
+  .dishes li {
+    font-size: 0.7rem;
+  }
+
+  .menu--2 .dishes li {
+    font-size: 0.8rem;
+  }
+
+  .menu--1 .title_mini h2 {
+    margin-top: 2px;
+    font-size: 1rem;
+  }
+  .menu--1 .title_mini h2 .fas {
+    font-size: 1rem;
+  }
+
+  .btm {
+    bottom: auto;
+  }
+}
 /*---------------------General--------------------*/
 body {
   margin: 0;
