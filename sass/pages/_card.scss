@@ -2,8 +2,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 60px 60px; 
+    justify-content: center; 
     &__list {
         @include box;
         &--1 {

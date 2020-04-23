@@ -38,6 +38,7 @@ h1, h2, .btn--soon {
   height: 96px;
   bottom: 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -74,7 +75,6 @@ h1, h2, .btn--soon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px 60px;
 }
 .cards__list {
   display: flex;
@@ -82,7 +82,6 @@ h1, h2, .btn--soon {
   justify-content: center;
   text-align: center;
   margin: 40px auto;
-  margin-bottom: 120px;
   padding: 20px;
   width: 520px;
   height: 720px;
@@ -167,7 +166,6 @@ h1, h2, .btn--soon {
   justify-content: center;
   text-align: center;
   margin: 40px auto;
-  margin-bottom: 120px;
   padding: 20px;
   width: 520px;
   height: 720px;
@@ -665,11 +663,15 @@ h1, h2, .btn--soon {
     font-size: 2.5rem;
   }
 
+  main {
+    margin-bottom: 40px;
+  }
+
   .btm {
-    height: 64px;
+    height: 32px;
   }
   .btm__txt a {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     padding: 10px;
   }
 
@@ -717,6 +719,7 @@ h1, h2, .btn--soon {
 
   .btm {
     height: 64px;
+    bottom: 0;
   }
 
   .btn {
@@ -790,7 +793,6 @@ h1, h2, .btn--soon {
   .menu {
     height: fit-content;
     width: 300px;
-    margin: 10px auto;
     padding: 2px;
   }
   .menu h2 {
@@ -847,10 +849,6 @@ h1, h2, .btn--soon {
   }
   .menu--1 .title_mini h2 .fas {
     font-size: 1rem;
-  }
-
-  .btm {
-    bottom: auto;
   }
 }
 /*---------------------General--------------------*/
