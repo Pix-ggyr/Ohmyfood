@@ -17,7 +17,7 @@ $palette-bg:#FDFFFD;
 
 @mixin clipping-mask {
     background-clip: border-box;
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }    
 
@@ -68,7 +68,6 @@ $palette-bg:#FDFFFD;
     ul {
         display: block;
         list-style-type: none;
-        padding-inline-start: unset;
     }
     li {
         display: flex;
