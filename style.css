@@ -222,6 +222,7 @@ h1, h2, .btn--soon {
 .menu--1 .dishes ul {
   display: block;
   list-style-type: none;
+  padding-left: 0;
 }
 .menu--1 .dishes li {
   display: flex;
@@ -331,6 +332,7 @@ h1, h2, .btn--soon {
 .menu--2 .dishes ul {
   display: block;
   list-style-type: none;
+  padding-left: 0;
 }
 .menu--2 .dishes li {
   display: flex;
@@ -420,6 +422,7 @@ h1, h2, .btn--soon {
 .menu--3 .dishes ul {
   display: block;
   list-style-type: none;
+  padding-left: 0;
 }
 .menu--3 .dishes li {
   display: flex;
@@ -476,6 +479,7 @@ h1, h2, .btn--soon {
 .menu--4 .dishes ul {
   display: block;
   list-style-type: none;
+  padding-left: 0;
 }
 .menu--4 .dishes li {
   display: flex;
