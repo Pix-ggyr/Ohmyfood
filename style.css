@@ -74,7 +74,7 @@ h1, h2, .btn--soon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px, 60px;
+  padding: 60px 60px;
 }
 .cards__list {
   display: flex;
@@ -96,7 +96,7 @@ h1, h2, .btn--soon {
   font-size: 4rem;
   background: linear-gradient(120deg, #ff3c00, #fc9700);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .cards__list--1 h2 {
@@ -117,7 +117,7 @@ h1, h2, .btn--soon {
   font-size: 1.8rem;
   background: linear-gradient(80deg, #E08817, #9E70FD);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .cards__list--2 a {
@@ -134,7 +134,7 @@ h1, h2, .btn--soon {
   font-size: 2.3rem;
   background: linear-gradient(120deg, #0230fc, #05a8e9);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .cards__list--3 a {
@@ -151,7 +151,7 @@ h1, h2, .btn--soon {
   font-size: 2.3rem;
   background: linear-gradient(70deg, #00c21a, #a6ff00);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .cards__list--4 a {
@@ -181,7 +181,7 @@ h1, h2, .btn--soon {
   font-size: 3rem;
   background: linear-gradient(120deg, #ff3c00, #fc9700);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .menu--1 h2 {
@@ -222,7 +222,6 @@ h1, h2, .btn--soon {
 .menu--1 .dishes ul {
   display: block;
   list-style-type: none;
-  padding-inline-start: unset;
 }
 .menu--1 .dishes li {
   display: flex;
@@ -248,7 +247,7 @@ h1, h2, .btn--soon {
   font-size: 2rem;
   background: linear-gradient(80deg, #E08817, #9E70FD);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .menu--2 .bar {
@@ -332,7 +331,6 @@ h1, h2, .btn--soon {
 .menu--2 .dishes ul {
   display: block;
   list-style-type: none;
-  padding-inline-start: unset;
 }
 .menu--2 .dishes li {
   display: flex;
@@ -359,7 +357,7 @@ h1, h2, .btn--soon {
   font-size: 3rem;
   background: linear-gradient(120deg, #0230fc, #05a8e9);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .menu--3 .bar {
@@ -422,7 +420,6 @@ h1, h2, .btn--soon {
 .menu--3 .dishes ul {
   display: block;
   list-style-type: none;
-  padding-inline-start: unset;
 }
 .menu--3 .dishes li {
   display: flex;
@@ -440,7 +437,7 @@ h1, h2, .btn--soon {
   font-size: 3rem;
   background: linear-gradient(70deg, #00c21a, #a6ff00);
   background-clip: border-box;
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .menu--4 .bar {
@@ -479,7 +476,6 @@ h1, h2, .btn--soon {
 .menu--4 .dishes ul {
   display: block;
   list-style-type: none;
-  padding-inline-start: unset;
 }
 .menu--4 .dishes li {
   display: flex;
