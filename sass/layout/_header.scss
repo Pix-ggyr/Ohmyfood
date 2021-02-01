@@ -1,0 +1,28 @@
+header,
+.btn--soon {
+  background-color: $clr-green;
+}
+
+h1,
+h2,
+.btn--soon {
+  color: $clr-yellow;
+}
+
+.title {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  &__h1 {
+    font-size: 3.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  & a {
+    text-decoration: none;
+    color: $clr-yellow;
+  }
+}
