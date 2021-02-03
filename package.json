@@ -1,0 +1,27 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "//Projet n°3 - Openclassrooms - Formation developpeur web//",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^7.19.0",
+    "g": "^2.0.1",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pix-ggyr/Ohmyfood.git"
+  },
+  "author": "Pix-ggyr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pix-ggyr/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Pix-ggyr/Ohmyfood#readme"
+}

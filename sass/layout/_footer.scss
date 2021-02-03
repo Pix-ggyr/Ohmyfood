@@ -1,0 +1,24 @@
+footer {
+  background-color: $clr-green;
+}
+
+.btm {
+  width: 100%;
+  height: 96px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  &__txt {
+    a {
+      padding: 40px;
+      color: $clr-yellow;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+    }
+  }
+}

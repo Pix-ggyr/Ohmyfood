@@ -1,0 +1,73 @@
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    &__list {
+        @include box;
+        &--1 {
+            background-color: $note-bg;
+            font-family: 'devonshire', sans-serif;
+            .fas {
+                font-size: 4rem;
+                @include grad-note;
+                @include clipping-mask;
+            }
+            h2 {
+                font-size: 2.5rem;
+                color: maroon;
+            }
+            a {
+                font-size: 1.3rem;
+                font-family: 'sriracha', sans-serif;
+                text-decoration: none;
+                color: maroon;
+            }
+        }
+        &--2 {
+            background-color: $chic-bg;
+            font-family: 'croissant one', serif;
+            h2 {
+                font-size: 1.8rem;
+                @include grad-chic;
+                @include clipping-mask;
+            }
+            a {
+                font-size: 1.3rem;
+                font-family: 'sriracha', sans-serif;
+                text-decoration: none;
+                color:#E08817;
+            }
+        }
+        &--3 {
+            background-color: $delice-bg;
+            font-family: 'dancing script', serif;
+            h2 {
+                font-size: 2.3rem;
+                @include grad-del;
+                @include clipping-mask;
+            }
+            a {
+                font-size: 1.3rem;
+                font-family: 'sriracha', sans-serif;
+                text-decoration: none;
+                color:#4866E5;
+            }
+        }
+        &--4 {
+            background-color: $palette-bg;
+            font-family: 'kaushan script', sans-serif;
+            h2 {
+                font-size: 2.3rem;
+                @include grad-pal;
+                @include clipping-mask;
+            }
+            a {
+                font-size: 1.3rem;
+                font-family: 'sriracha', sans-serif;
+                text-decoration: none;
+                color:#4C9F42;
+            }
+        }
+    }
+}
